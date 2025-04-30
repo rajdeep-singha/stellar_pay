@@ -120,12 +120,12 @@ npm run dev
 
 <table>
   <tr>
-    <th>Login Page</th><th>Dashboard</th><th>Profile</th>
+    <th>Login Page</th><th>Dashboard</th>
   </tr>
   <tr>
     <td> <img src="https://github.com/user-attachments/assets/20dffb3d-40b8-4f75-81d0-a46f6458f189" width="200" /></td>
     <td><img src="https://github.com/user-attachments/assets/e4ea8ff2-b82a-4114-bd9b-4d672636bae6" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/f94b4aa0-4f2f-423b-8866-0f367c0036b9" width="200"/></td>
+   
   </tr>
 </table>
 
