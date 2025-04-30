@@ -1,4 +1,4 @@
-<h1 align="center">🚀 StellarPay</h1>
+<h1 align="center"> StellarPay</h1>
 
 <p align="center">
   <strong>Fast, Cheap & Borderless Payrolls for the World</strong><br>
