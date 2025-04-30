@@ -7,7 +7,6 @@
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/20dffb3d-40b8-4f75-81d0-a46f6458f189" width="600" alt="StellarPay UI" />
-
 </p>
 
 ---
@@ -33,6 +32,26 @@
   <li><strong>Backend / Auth / DB</strong>: <span style="color:#fc7303">Supabase</span></li>
   <li><strong>Blockchain</strong>: <span style="color:#8c52ff">Stellar Network</span></li>
 </ul>
+
+---
+
+<h2>🧠 Technical Architecture</h2>
+
+<p>StellarPay’s architecture is optimized for scalability, decentralization, and speed. It utilizes modern frontend/backend stacks and is powered by Stellar's Soroban smart contracts.</p>
+
+<ul>
+  <li><strong>Frontend</strong>: Next.js + TailwindCSS</li>
+  <li><strong>Backend</strong>: Supabase (PostgreSQL, Auth, Realtime)</li>
+  <li><strong>Blockchain</strong>: Stellar Smart Contracts (Soroban)</li>
+  <li><strong>Wallet Integration</strong>: Stellar WalletKit / Albedo / Freighter</li>
+  <li><strong>Deployment</strong>: Vercel / Docker / Stellar Horizon APIs</li>
+</ul>
+
+<p align="center">
+<h3>  <strong>🗂️ System Architecture Diagram</strong> </h3><br>
+  <img src="https://github.com/user-attachments/assets/2ab5ae80-053f-4d45-80b9-4ba64198ef73" alt="Architecture Diagram" width="800"/>
+</p>
+
 
 ---
 
@@ -104,8 +123,9 @@ npm run dev
     <th>Login Page</th><th>Dashboard</th><th>Profile</th>
   </tr>
   <tr>
-    <td> <img src="https://github.com/user-attachments/assets/20dffb3d-40b8-4f75-81d0-a46f6458f189" width="600" alt="StellarPay UI" /></td>
-   <td><img src="https://github.com/user-attachments/assets/e4ea8ff2-b82a-4114-bd9b-4d672636bae6" width="200"/></td>
+    <td> <img src="https://github.com/user-attachments/assets/20dffb3d-40b8-4f75-81d0-a46f6458f189" width="200" /></td>
+    <td><img src="https://github.com/user-attachments/assets/e4ea8ff2-b82a-4114-bd9b-4d672636bae6" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/f94b4aa0-4f2f-423b-8866-0f367c0036b9" width="200"/></td>
   </tr>
 </table>
 
