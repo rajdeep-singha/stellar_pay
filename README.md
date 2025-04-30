@@ -18,9 +18,9 @@
 <p>We focus on three major finance use-cases:</p>
 
 <ul>
-  <li>🌍 <strong>Remittance Payments</strong> (cross-border money transfers)</li>
-  <li>⏱️ <strong>Early Wage Access (EWA)</strong> (get paid as you earn)</li>
-  <li>💸 <strong>On/Off-Ramp Payroll Systems</strong> (modern global payroll infrastructure)</li>
+  <li> <strong>Remittance Payments</strong> (cross-border money transfers)</li>
+  <li> <strong>Early Wage Access (EWA)</strong> (get paid as you earn)</li>
+  <li> <strong>On/Off-Ramp Payroll Systems</strong> (modern global payroll infrastructure)</li>
 </ul>
 
 ---
