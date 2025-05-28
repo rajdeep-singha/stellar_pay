@@ -16,7 +16,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "motion/react";
-// import { supabase } from "@/lib/supabase";
+import { supabase } from "@/lib/supabase";
 
 // Define the form schema with validation
 const formSchema = z.object({
