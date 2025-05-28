@@ -40,7 +40,7 @@ export default function Home() {
         className="scroll-m-25 mb-20 md:mb-40 max-w-6xl mx-auto"
       >
         <div className="text-center text-xl md:text-3xl mb-4 md:mb-8">
-          Market opportunities we're addressing with Stellar technology
+          Market opportunities we are addressing with Stellar technology
         </div>
         <Stats />
       </section>

@@ -1,9 +1,8 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "motion/react";
-import { Twitter, Linkedin, Github, Mail } from "lucide-react";
-import { Button } from "./ui/button";
+// import { motion } from "motion/react";
+// import { Button } from "./ui/button";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();

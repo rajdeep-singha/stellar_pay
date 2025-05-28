@@ -118,7 +118,7 @@ export default function Waitlist() {
                 className="flex items-center gap-2 text-sm p-3 rounded-md bg-primary/10 text-primary"
               >
                 <CheckCircle className="h-5 w-5" />
-                <span>You've been added to the waitlist!</span>
+                <span>You have been added to the waitlist</span>
               </motion.div>
             ) : submissionState === "error" ? (
               <motion.div
