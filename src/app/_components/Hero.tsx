@@ -1,6 +1,6 @@
 "use client";
 
-import { Blocks, Loader, Mouse } from "lucide-react";
+import {  Loader, Mouse } from "lucide-react";
 
 import { LayoutGroup, motion } from "motion/react";
 import TextRotate from "../../components/ui-animate/text-rotate";

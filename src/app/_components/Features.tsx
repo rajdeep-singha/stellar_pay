@@ -37,7 +37,7 @@ export function Features() {
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-md lg:text-lg font-normal mb-4 md:mb-8">
             Send money across borders instantly with minimal fees using
-            Stellar's decentralized exchange for real-time currency conversion.
+            Stellars decentralized exchange for real-time currency conversion.
           </p>
           <motion.div
             className="grid grid-cols-2 gap-4"
