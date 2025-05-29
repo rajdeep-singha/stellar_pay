@@ -121,7 +121,7 @@ export default function Header() {
           </AnimatePresence>
 
           <Button asChild variant="outline" size={"lg"}>
-            <Link href={"https://x.com/early_finance"} target="_blank">
+            <Link href={"https://x.com/stellar_pay"} target="_blank">
               <FaXTwitter />
             </Link>
           </Button>

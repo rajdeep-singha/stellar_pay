@@ -23,7 +23,7 @@ export default function Hero() {
   };
 
   const words =
-    "Your Gateway to Instant Remittances, Early Wage Access and Seamless Payroll.".split(
+    "Your Gateway to Early Wage Access and Seamless Payroll".split(
       " "
     );
 

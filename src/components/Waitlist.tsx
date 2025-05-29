@@ -41,41 +41,35 @@ export default function Waitlist() {
 
   // Handle form submission
   const onSubmit = async (data: FormData) => {
-    setIsSubmitting(true);
+  setIsSubmitting(true);
 
-    try {
-      console.log("Attempting to submit email to waitlist:", data.email);
-      
-      // Insert email into Supabase waitlist table
-      const { error } = await supabase
-        .from('waitlist')
-        .insert([{ email: data.email }]);
-      
-      if (error) {
-        console.error("Supabase error details:", {
-          message: error.message,
-          code: error.code,
-          details: error.details,
-          hint: error.hint
-        });
-        throw error;
-      }
+  try {
+    console.log("Attempting to submit email to waitlist:", data.email);
 
-      console.log("Successfully added email to waitlist");
-      setSubmissionState("success");
-      form.reset();
-    } catch (error) {
-      console.error("Error submitting to waitlist:", error);
-      setSubmissionState("error");
-    } finally {
-      setIsSubmitting(false);
+    const { error, data: insertedData, status } = await supabase
+      .from("waitlist")
+      .insert([{ email: data.email }]);
 
-      // Reset submission state after 5 seconds
-      setTimeout(() => {
-        setSubmissionState("idle");
-      }, 5000);
+    console.log("Supabase response status:", status);
+    console.log("Inserted data:", insertedData);
+
+    if (error) {
+      console.error("❌ Supabase error:", error);
+      throw error;
     }
-  };
+
+    console.log("✅ Successfully added email to waitlist");
+    setSubmissionState("success");
+    form.reset();
+  } catch (error) {
+    console.error("❌ Error in onSubmit:", error);
+    setSubmissionState("error");
+  } finally {
+    setIsSubmitting(false);
+    setTimeout(() => setSubmissionState("idle"), 5000);
+  }
+};
+
 
   return (
     <div className="mx-auto p-2 lg:p-4">
