@@ -21,13 +21,15 @@ export default function QuizHistory() {
         data: { user },
       } = await supabase.auth.getUser();
       if (!user) return;
-      const { data, error } = await supabase
+     
+
+  const { data, error } = await supabase
   .from('quiz_results')
   .select('id, score, total, taken_at')
   .eq('user_id', user.id)
   .order('taken_at', { ascending: false })
-  .limit(10) as unknown as { data: ResultRow[] | null, error: any };
-  
+  .limit(10);
+
 
       if (error) {
         console.error(error);
