@@ -13,7 +13,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [pastHeroSection, setPastHeroSection] = useState(false);
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -90,8 +90,44 @@ export default function Header() {
               className="text-neutral-500 dark:text-neutral-400 transition-all duration-200 px-3 "
             />
           </Link>
+
+          <Link
+            href={"/#game"}
+            className="focus-visible:border-neutral-300 focus-visible:ring-neutral-300/90 focus-visible:ring-[2px]  outline-none transition-all duration-200"
+          >
+            <LetterSwapPingPong
+              reverse={false}
+              staggerFrom={"center"}
+              label="Game"
+              className="text-neutral-500 dark:text-neutral-400 transition-all duration-200 px-3 "
+            />
+          </Link>
         </div>
+
+
         <div className="relative flex items-center gap-2">
+
+         <div className="lg:hidden">
+  <button
+    onClick={() => setIsMenuOpen(!isMenuOpen)}
+    className="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+  >
+    <svg
+      className="w-6 h-6 text-primary"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+      />
+    </svg>
+  </button>
+</div>
           <AnimatePresence>
             {pastHeroSection && (
               <motion.div
@@ -127,6 +163,26 @@ export default function Header() {
           </Button>
           <ThemeToggle />
         </div>
+
+        {isMenuOpen && (
+  <div className="lg:hidden absolute top-full left-0 w-full bg-background shadow-md rounded-b-xl border-t z-40">
+    <div className="flex flex-col space-y-2 py-4 px-6">
+      <Link href="/#features" onClick={() => setIsMenuOpen(false)} className="text-lg text-neutral-600 dark:text-neutral-300">
+        Features
+      </Link>
+      <Link href="/#stats" onClick={() => setIsMenuOpen(false)} className="text-lg text-neutral-600 dark:text-neutral-300">
+        Stats
+      </Link>
+      <Link href="/#about" onClick={() => setIsMenuOpen(false)} className="text-lg text-neutral-600 dark:text-neutral-300">
+        About
+      </Link>
+      <Link href="/#game" onClick={() => setIsMenuOpen(false)} className="text-lg text-neutral-600 dark:text-neutral-300">
+        Game
+      </Link>
+    </div>
+  </div>
+)}
+
       </div>
     </header>
   );

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Script from 'next/script';
 
-
 import { ThemeProvider } from "@/providers/ThemeProviders";
 
 import Header from "@/components/Header";
@@ -52,6 +51,8 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+
+             
         </ThemeProvider>
         
       </body>

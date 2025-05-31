@@ -99,13 +99,33 @@ export default function Home() {
               </div>
             </div>
             <Button variant="outline" asChild>
-              <Link href="https://x.com/early_finance" target="_blank">
+              <Link href="https://x.com/stellar_pay" target="_blank">
                 Learn more about us
               </Link>
             </Button>
           </div>
         </div>
       </section>
+
+       {/* ─────────────── NEW: Game section ─────────────── */}
+      <section
+        id="game"
+        className="scroll-m-25 mb-20 md:mb-40 max-w-6xl mx-auto text-center"
+      >
+        <h2 className="text-3xl md:text-4xl font-medium mb-4">
+          Ready for a quick finance quiz?
+        </h2>
+        <p className="text-lg md:text-xl text-muted-foreground mb-6">
+          Test your StellarPay knowledge and finance trivia. Earn a spot on our
+          leaderboard—prove you’re a StellarPay Whiz!
+        </p>
+        <Link href="/game" className="inline-block">
+          <Button className="cursor-pointer text-white dark:text-black bg-gradient-to-r from-purple-500 via-violet-600 to-purple-900 dark:from-fuchsia-200 dark:via-purple-300 dark:to-pink-200 hover:opacity-95 active:opacity-90 duration-200">
+            Play the Quiz
+          </Button>
+        </Link>
+      </section>
+      {/* ──────────────────────────────────────────────────── */}
     </main>
   );
 }
