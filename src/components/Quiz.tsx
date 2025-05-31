@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 import { QuizQuestion } from '../types/quiz';
-import { supabase } from '../lib/supabase';
+// import { supabase } from '../lib/supabase';
 
 interface QuizProps {
   userId: string;
@@ -53,7 +53,7 @@ const QUESTION_BANK: QuizQuestion[] = [
   },
 ];
 
-export default function Quiz({ userId, onComplete }: QuizProps) {
+export default function Quiz({  onComplete }: QuizProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
