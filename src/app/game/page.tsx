@@ -6,11 +6,12 @@ import { useRouter } from 'next/navigation';
 import { supabase } from '../../lib/supabase';
 import Quiz from '../../components/Quiz';
 import QuizResult from '../../components/QuizResult';
+import type { User } from '@supabase/supabase-js';
+
 // import ProtectedRoute from "../protected/ProtectedRoute"
 
 export default function GamePage() {
-  const [user, setUser] = useState<unknown>(null);
-  const [loading, setLoading] = useState<boolean>(true);
+const [user, setUser] = useState<User | null>(null);  const [loading, setLoading] = useState<boolean>(true);
   const [quizStarted, setQuizStarted] = useState(false);
   const [scoreData, setScoreData] = useState<{ score: number; total: number } | null>(null);
   const router = useRouter();
