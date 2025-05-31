@@ -22,11 +22,12 @@ export default function QuizHistory() {
       } = await supabase.auth.getUser();
       if (!user) return;
       const { data, error } = await supabase
-        .from<ResultRow>('quiz_results')
-        .select('id, score, total, taken_at')
-        .eq('user_id', user.id)
-        .order('taken_at', { ascending: false })
-        .limit(10);
+  .from('quiz_results')
+  .select('id, score, total, taken_at')
+  .eq('user_id', user.id)
+  .order('taken_at', { ascending: false })
+  .limit(10) as unknown as { data: ResultRow[] | null, error: any };
+  
 
       if (error) {
         console.error(error);
