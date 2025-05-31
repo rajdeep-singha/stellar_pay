@@ -79,13 +79,13 @@ export default function Quiz({ userId, onComplete }: QuizProps) {
     } else {
       // Quiz finished → save to Supabase
       setSubmitting(true);
-      const { error } = await supabase.from('quiz_results').insert([
-        {
-          user_id: userId,
-          score,
-          total: totalQuestions,
-        },
-      ]);
+      // const { error } = await supabase.from('quiz_results').insert([
+      //   {
+      //     user_id: userId,
+      //     score,
+      //     total: totalQuestions,
+      //   },
+      // ]);
       setSubmitting(false);
       onComplete(score, totalQuestions);
     }

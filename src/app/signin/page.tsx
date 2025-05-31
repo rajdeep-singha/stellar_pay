@@ -58,7 +58,7 @@ export default function SignInPage() {
         </form>
 
         <p className="text-center mt-4 text-sm text-muted-foreground">
-          Don't have an account? <a href="/signup" className="text-primary underline">Sign Up</a>
+          Do not have an account? <a href="/signup" className="text-primary underline">Sign Up</a>
         </p>
       </div>
     </div>

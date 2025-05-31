@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Loader2 } from 'lucide-react';
 
 export default function SignUpPage() {
-  const router = useRouter();
+//   const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);

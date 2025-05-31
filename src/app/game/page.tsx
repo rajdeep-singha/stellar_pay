@@ -9,7 +9,7 @@ import QuizResult from '../../components/QuizResult';
 // import ProtectedRoute from "../protected/ProtectedRoute"
 
 export default function GamePage() {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<unknown>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [quizStarted, setQuizStarted] = useState(false);
   const [scoreData, setScoreData] = useState<{ score: number; total: number } | null>(null);
