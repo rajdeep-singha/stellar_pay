@@ -1,4 +1,4 @@
-// /src/components/QuizResult.tsx
+
 'use client';
 
 import { useRouter } from 'next/navigation';
@@ -7,6 +7,8 @@ interface QuizResultProps {
   score: number;
   total: number;
 }
+
+
 
 export default function QuizResult({ score, total }: QuizResultProps) {
   const router = useRouter();
@@ -32,7 +34,7 @@ export default function QuizResult({ score, total }: QuizResultProps) {
           ← Back
         </button>
         <button
-          onClick={() => router.push('/game')}
+         onClick={() => window.location.href = '/game'}
           className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-90 rounded-md text-white"
         >
           Play Again
