@@ -314,7 +314,7 @@ const QUESTION_BANK: QuizQuestion[] = [
 ];
 
 
-export default function Quiz({ userId, onComplete }: QuizProps) {
+export default function Quiz({  onComplete }: QuizProps) {
   const {
     currentQuestion,
     currentIndex,

@@ -69,8 +69,8 @@ const [user, setUser] = useState<User | null>(null);  const [loading, setLoading
       <h1 className="text-5xl font-bold mb-4 underline decoration-gradient-to-r from-pink-500 to-purple-500">
         Finance Quiz Challenge
       </h1>
-      <p className="mb-6 text-lg text-gray‑300 text-center max-w-xl">
-        Test your StellarPay knowledge and finance trivia! Earn your place on our leaderboard by acing this 5‑question quiz. Ready?
+      <p className="mb-6 text-lg text-gray-300 text-center max-w-xl">
+        Test your StellarPay knowledge and finance trivia! Earn your place on our leaderboard by acing this 5 question quiz. Ready?
       </p>
       <button
         onClick={() => setQuizStarted(true)}

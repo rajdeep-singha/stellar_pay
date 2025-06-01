@@ -18,9 +18,9 @@ export default function QuizResult({ score, total }: QuizResultProps) {
       <h1 className="text-5xl font-bold mb-4 text-gradient bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500">
         You Scored {score} / {total}!
       </h1>
-      <p className="mb-8 text-lg text-gray‑300">
+      <p className="mb-8 text-lg text-gray-300">
         {score === total
-          ? '🎉 Perfect! You’re a StellarPay Whiz.'
+          ? '🎉 Perfect! You are a StellarPay Whiz.'
           : score >= total / 2
           ? '👍 Nice job! Keep improving your finance game.'
           : '😕 Better luck next time—try again to improve your score!'}
