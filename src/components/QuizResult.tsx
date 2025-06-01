@@ -125,7 +125,7 @@ const hasRun = useRef(false);
             </tr>
           </thead>
           <tbody>
-            {leaderboard.map((entry, index) => (
+            {leaderboard.map((entry) => (
               <tr key={entry.id} className="border-t border-gray-700">
                 <td className="py-2 px-4">{entry.name}</td>
                 <td className="py-2 px-4">{entry.attempts}</td>
