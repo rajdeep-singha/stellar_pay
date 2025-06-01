@@ -102,6 +102,17 @@ export default function Header() {
               className="text-neutral-500 dark:text-neutral-400 transition-all duration-200 px-3 "
             />
           </Link>
+          <Link
+            href={"/leaderboard"}
+            className="focus-visible:border-neutral-300 focus-visible:ring-neutral-300/90 focus-visible:ring-[2px]  outline-none transition-all duration-200"
+          >
+            <LetterSwapPingPong
+              reverse={false}
+              staggerFrom={"center"}
+              label="Leaderboard"
+              className="text-neutral-500 dark:text-neutral-400 transition-all duration-200 px-3 "
+            />
+          </Link>
         </div>
 
 
@@ -178,6 +189,9 @@ export default function Header() {
       </Link>
       <Link href="/#game" onClick={() => setIsMenuOpen(false)} className="text-lg text-neutral-600 dark:text-neutral-300">
         Game
+      </Link>
+      <Link href="/leaderboard" onClick={() => setIsMenuOpen(false)} className="text-lg text-neutral-600 dark:text-neutral-300">
+        Leaderboard
       </Link>
     </div>
   </div>
