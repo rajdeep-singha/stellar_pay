@@ -8,7 +8,6 @@ import Quiz from '../../components/Quiz';
 import QuizResult from '../../components/QuizResult';
 import type { User } from '@supabase/supabase-js';
 
-// import ProtectedRoute from "../protected/ProtectedRoute" 
 
 export default function GamePage() {
 const [user, setUser] = useState<User | null>(null);  const [loading, setLoading] = useState<boolean>(true);
